@@ -220,7 +220,7 @@
        ==> 만약 매번 동작시킬려면 함수로 처리해야 된다.
      - 여러개 지정 가능하고 상태값 변경함수는 호출한 순서대로 적용된다.
    https://reactjs.org/docs/hooks-state.html#tip-using-multiple-state-variables
-     - 만약 하나의 state에 여러속성을 관리한다면 useReducer가 더 적합하다.	
+     - 만약 하나의 state에 여러 조건을 관리한다면 useReducer가 더 적합하다.	
 
      가. import
  	import React, {useState}  from ‘react’
