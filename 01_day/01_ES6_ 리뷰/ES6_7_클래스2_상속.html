@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+      //클래스 지원
+      class Pet{
+        constructor(name, age){
+          this.name = name;
+          this.age = age;
+        }
+        getInfo(){
+          return `이름:${this.name} ,나이:${this.age}`;
+        }
+      }
+      class Cat extends Pet{
+        constructor(name, age, gender){
+          super(name, age);
+          this.gender = gender;
+        }
+        getInfo(){
+          return `이름:${this.name} ,나이:${this.age},성별:${this.gender}`;
+        }
+      }
+      var c = new Cat("야옹이",2,"암컷");
+      console.log(c.getInfo());
+
+
+    </script>
+</head>
+<body>
+    hello
+</body>
+</html>
