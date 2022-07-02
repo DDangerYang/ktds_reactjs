@@ -36,6 +36,10 @@
     function fun2([n,n2]){
         console.log(n, n2);
     }
+    //arrow 함수(***)
+    const fun2 = ([n,n2])=>{
+        console.log(n, n2);
+    }
     fun2([10,20]);
 
    //가. 기존방식
@@ -48,6 +52,10 @@
     function fun3({username,age}){
         console.log(username,age);
     }
+    //arrow 함수(***)
+    const fun3 = ({username,age})=>{
+        console.log(username,age);
+    };
     fun3({"username":"이순신","age":20});
 
 
