@@ -16,9 +16,12 @@
 
     var name = "홍길동";
     var age = 20;
+    var isMarried = true;
     // 출력포맷: 이름: 홍길동, 나이:20 
     const info = "이름:"+ name + ",  나이:"+   age;
-    const info2 =  `이름:${name}, 나이:${age}`;
+    const info2 =  `이름:${name}, 나이:${age+1},
+                    20살 이상이냐?${age>20},
+                    결혼여부:${ isMarried?'기혼':'미혼'}`;
     console.log(info)
     console.log(info2)
     // html table 생성
