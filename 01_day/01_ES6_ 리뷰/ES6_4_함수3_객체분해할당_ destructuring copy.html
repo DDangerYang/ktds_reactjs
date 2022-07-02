@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      
+      // 객체분해할당(destructuring)
+
+      //1. 배열
+      let names = ["A","B"];
+    //   let n1 = names[0]; 
+    //   let n2 = names[1]; 
+
+      let [m1,m2] = ["A","B"];
+      console.log(m1, m2);
+
+      //2. JSON객체
+      const user ={"username":"이순신","age":20}
+    //   var username = user.username;
+    //   var age = user.age;
+
+      var {username, age} = {"username":"이순신","age":20};
+      console.log(username, age);
+      
+    //함수호출시 
+    //가. 기존방식
+    function fun(n){
+        console.log(n[0], n[1]);
+    }
+    fun([10,20]);
+    
+    //나. 객체분해할당 방식 (*)
+    function fun2([n,n2]){
+        console.log(n, n2);
+    }
+    //arrow 함수(***)
+    const fun2 = ([n,n2])=>{
+        console.log(n, n2);
+    }
+    fun2([10,20]);
+
+   //가. 기존방식
+    function fun3(n){
+        console.log(n.username, n.age);
+    }
+    fun3({"username":"이순신","age":20});
+
+    //나. 객체분해할당 방식 (**)
+    function fun3({username,age}){
+        console.log(username,age);
+    }
+    //arrow 함수(***)
+    const fun3 = ({username,age})=>{
+        console.log(username,age);
+    };
+    fun3({"username":"이순신","age":20});
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    hello
+</body>
+</html>

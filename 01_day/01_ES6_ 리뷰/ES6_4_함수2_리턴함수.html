@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // 함수
+        //1. 함수선언식: 이름있는 함수
+        function fun(n,n2){
+            return n+n2;
+        };
+        //2. 함수 표현식: 익명함수
+        const fun2 = function (n,n2){
+            return n+n2;
+        };
+        //3. arrow 함수: 함수 표현식의 새로운 표현 방법(*)
+        // const fun3 = (n,n2)=>{
+        //     return n+n2;
+        // };
+        const fun3 = (n,n2)=>n+n2; // 중요
+
+        var f = fun(1,2);
+        var f2 = fun2(1,2);
+        var f3 = fun3(1,2);
+        console.log(f, f2, f3);
+    </script>
+</head>
+<body>
+    hello
+</body>
+</html>
