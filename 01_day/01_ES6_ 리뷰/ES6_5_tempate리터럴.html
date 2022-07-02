@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+    // template  리터럴: 백티(backthick) ``
+    var n=10;
+    const mesg = "hello" + n;
+    const mesg2 = 'hello' + n;
+    const mesg3 = `hello${n}`;
+    console.log(mesg, mesg2, mesg3);
+
+    var name = "홍길동";
+    var age = 20;
+    // 출력포맷: 이름: 홍길동, 나이:20 
+    const info = "이름:"+ name + ",  나이:"+   age;
+    const info2 =  `이름:${name}, 나이:${age}`;
+    console.log(info)
+    console.log(info2)
+    // html table 생성
+    const table1 = "<table><tr><td> \
+         AAA</td></tr></table>";
+    const table2 = `
+        <table>
+          <tr>
+            <td>AAA</td>
+          </tr>
+        </table>
+     `;    
+     console.log(table1)
+    console.log(table2)   
+    </script>
+</head>
+<body>
+    hello
+</body>
+</html>
